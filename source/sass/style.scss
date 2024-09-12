@@ -1,0 +1,32 @@
+// Vendor
+// ---------------------------------
+
+@import "vendor/normalize";
+
+// Global
+// ---------------------------------
+
+@import "variables";
+@import "mixins";
+@import "global/fonts";
+@import "global/reboot";
+@import "global/utils";
+@import "global/container";
+
+// Blocks
+// ---------------------------------
+
+@import "blocks/animations";
+@import "blocks/header";
+@import "blocks/main-nav";
+@import "blocks/footer";
+@import "blocks/btn";
+@import "blocks/title";
+@import "blocks/scheme";
+@import "blocks/custom-input";
+@import "blocks/custom-select";
+@import "blocks/input-upload";
+@import "blocks/input-range";
+@import "blocks/intro";
+@import "blocks/order";
+@import "blocks/form";

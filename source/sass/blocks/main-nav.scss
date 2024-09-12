@@ -1,0 +1,74 @@
+.main-nav {
+  color: $color-default-white;
+
+  @include vp-767 {
+    position: fixed;
+    background-color: $color-jaguar;
+    display: flex;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    right: 0;
+    padding: 95px 10px 70px 20px;
+    transition: visibility $trans-default;
+    z-index: 20;
+  }
+
+  &__list {
+    display: flex;
+    column-gap: 62px;
+    row-gap: 15px;
+    max-width: 500px;
+    flex-wrap: wrap;
+    margin: auto 0;
+    padding: 0;
+    list-style: none;
+
+    @include vp-767 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      row-gap: 60px;
+      max-height: calc(100vh - 200px);
+      /* stylelint-disable-next-line */
+      min-height: calc(100 * var(--initial-vh, 1vh) - 200px);
+      width: 100%;
+      overflow: auto;
+
+      @include scrollbar;
+    }
+  }
+
+  &__link {
+    color: $color-default-white;
+    font-size: 13px;
+    line-height: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color $trans-default;
+
+    @include vp-767 {
+      font-size: 26px;
+      line-height: 26px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    &.is-active {
+      color: $color-summer-sky-2;
+      cursor: default;
+      pointer-events: none;
+    }
+
+    @include hover-focus {
+      color: $color-summer-sky-2;
+    }
+  }
+
+  &__toggle {
+    display: none;
+  }
+}

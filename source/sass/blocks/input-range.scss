@@ -1,0 +1,109 @@
+.input-range {
+  &__text-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 30px;
+    margin-bottom: 7px;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  input[type="range"] {
+    height: 7px;
+    /* stylelint-disable-next-line */
+    -webkit-appearance: none;
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  input[type="range"]:focus {
+    outline: none;
+  }
+
+  input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 7px;
+    cursor: pointer;
+    background: $color-ghost;
+    border-radius: 5px;
+    border: 1px solid $color-default-white;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    border: 4px solid $color-endeavour;
+    height: 26px;
+    width: 26px;
+    border-radius: 15px;
+    background: $color-summer-sky;
+    cursor: pointer;
+    /* stylelint-disable-next-line */
+    -webkit-appearance: none;
+    margin-top: -11px;
+  }
+
+  input[type="range"]:focus::-webkit-slider-runnable-track {
+    background: $color-ghost;
+  }
+
+  input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 7px;
+    cursor: pointer;
+    background: $color-ghost;
+    border-radius: 5px;
+    border: 1px solid $color-default-white;
+  }
+
+  input[type="range"]::-moz-range-thumb {
+    border: 4px solid $color-endeavour;
+    height: 26px;
+    width: 26px;
+    border-radius: 15px;
+    background: $color-summer-sky;
+    cursor: pointer;
+  }
+
+  input[type="range"]::-ms-track {
+    width: 100%;
+    height: 7px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+
+  input[type="range"]::-ms-fill-lower {
+    background: $color-ghost;
+    border: 1px solid $color-default-white;
+    border-radius: 15px;
+  }
+
+  input[type="range"]::-ms-fill-upper {
+    background: $color-ghost;
+    border: 1px solid $color-default-white;
+    border-radius: 15px;
+  }
+
+  input[type="range"]::-ms-thumb {
+    margin-top: 1px;
+    border: 4px solid $color-endeavour;
+    height: 26px;
+    width: 26px;
+    border-radius: 15px;
+    background: $color-summer-sky;
+    cursor: pointer;
+  }
+
+  input[type="range"]:focus::-ms-fill-lower {
+    background: $color-ghost;
+  }
+
+  input[type="range"]:focus::-ms-fill-upper {
+    background: $color-ghost;
+  }
+}
