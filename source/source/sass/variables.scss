@@ -1,0 +1,62 @@
+// Colors
+// ---------------------------------
+
+// Default
+
+$color-default-black:               #000000;
+$color-default-white:               #ffffff;
+$color-transparent:                 rgba(255, 255, 255, 0);
+
+// Project palette
+// для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
+
+$color-black-russian:               #10101d;
+$color-black-russian-2:             #2a2b30;
+$color-jaguar:                      #272733;
+$color-blue-zodiac:                 #3d4050;
+$color-dolphin:                     #6f6d7b;
+$color-silver:                      #c3c3c3;
+$color-silver-2:                    #bbbbbb;
+$color-silver-3:                    #c4c4c4;
+$color-quartz:                      #dfdfe1;
+$color-summer-sky:                  #42a9ed;
+$color-summer-sky-2:                #43abf0;
+$color-summer-sky-3:                #3e9cdc;
+$color-endeavour:                   #286690;
+$color-red:                         #ff0000;
+$color-ghost:                       #bdbdc0;
+
+// Gradient
+
+$black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+
+// Typography
+// ---------------------------------
+
+$ff-lato:                           "Lato", "Arial", sans-serif;
+
+// Animation
+// ---------------------------------
+
+$tf-default:                        ease;
+$trans-default:                     0.3s $tf-default;
+$trans-modal:                       0.6s cubic-bezier(0.55, 0, 0.1, 1);
+$trans-600:                         0.6s $tf-default;
+
+// Viewports
+// ---------------------------------
+
+$vp-320:                            320px;
+$vp-375:                            375px;
+$vp-560:                            560px;
+$vp-768:                            768px;
+$vp-1024:                           1024px;
+$vp-1280:                           1280px;
+$vp-1440:                           1440px;
+$vp-1920:                           1920px;
+
+// Retina
+// ---------------------------------
+
+$retina-dpi:                        144dpi;
+$retina-dppx:                       1.5dppx;

@@ -1,0 +1,59 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-width: 183px;
+  padding: 13px 31px;
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $color-default-white;
+  background-color: $color-summer-sky-3;
+  border: 1px solid $color-default-white;
+  border-radius: 4px;
+  cursor: pointer;
+  overflow: hidden;
+  isolation: isolate;
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 100%;
+    background: $color-default-white;
+    left: 0;
+    bottom: 0;
+    transition: height $trans-default;
+    opacity: 0.3;
+  }
+
+  @include hover-focus {
+    &::before {
+      height: 100%;
+    }
+  }
+
+  &--light {
+    color: $color-black-russian-2;
+    background-color: $color-default-white;
+    border-color: $color-dolphin;
+    transition: color $trans-default;
+
+    &::before {
+      opacity: 0.8;
+      background-color: $color-dolphin;
+      z-index: -1;
+    }
+
+    @include hover-focus {
+      color: $color-default-white;
+    }
+  }
+}
