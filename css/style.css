@@ -686,7 +686,7 @@ button,
 }
 
 .header__burger-line:nth-child(2) {
-  top: 16px;
+  top: 12px;
 }
 
 .header__burger-line:last-child {
@@ -1899,6 +1899,10 @@ button,
   line-height: 21px;
 }
 
+.input-range__value-wrapper {
+  white-space: nowrap;
+}
+
 .input-range input[type=range] {
   height: 7px;
   /* stylelint-disable-next-line */
@@ -2224,8 +2228,8 @@ button,
 
   .header__logo {
     position: relative;
-    width: 150px;
-    height: 15px;
+    width: 190px;
+    height: 25px;
     z-index: 25;
   }
 
@@ -2242,8 +2246,8 @@ button,
     background-color: transparent;
     padding: 0;
     border: none;
-    width: 45px;
-    height: 35px;
+    width: 35px;
+    height: 28px;
     z-index: 25;
   }
 
