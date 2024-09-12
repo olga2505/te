@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Тестовое задание</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Тестовое задание на позицию HTML-developer">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <link rel="manifest" href="/favicon/site.webmanifest" crossorigin="use-credentials">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="preload" href="fonts/lato-400.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato-700.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato-900.woff2" as="font" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.min.css ">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header" data-header data-scroll-lock-fill-gap>
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo">
+            <svg>
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+          </div>
+          <nav class="main-nav">
+            <ul class="main-nav__list" data-scroll-lock-scrollable>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link is-active">Бизнес</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">О нас</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Цены</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Оформить заказ</a>
+              </li>
+            </ul>
+          </nav>
+
+          <button class="header__burger" type="button" aria-label="Переключатель отображения меню" aria-pressed="false"
+            data-burger>
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+          </button>
+        </div>
+
+      </div>
+    </header>
+    <main>
+      <div class="intro">
+        <div class="intro__bg">
+          <picture>
+            <source type="image/webp" media="(max-width: 1023px)"
+              srcset="img/content/intro-mob.webp 1x, img/content/intro-mob@2x.webp 2x">
+            <source type="image/webp" srcset="img/content/intro.webp 1x, img/content/intro@2x.webp 2x">
+
+            <source media="(max-width: 1023px)" srcset="img/content/intro-mob.jpj 1x, img/content/intro-mob@2x.jpg 2x">
+            <img src="img/content/intro.jpg" srcset="img/content/intro.jpg@2x.png 2x" width="1920" height="850"
+              alt="Фон">
+          </picture>
+        </div>
+        <div class="container">
+          <div class="intro__inner">
+            <h1 class="title title--h1 intro__title" data-fade-up><span class="text-blue">Lorem ipsum</span> dolor sit
+              ametconsectetur <span class="text-blue">adipiscing</span></h1>
+            <div class="intro__list-wrapper">
+              <p class="intro__text" data-fade-up data-delay="0.1">At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
+              <ul class="intro__list">
+                <li class="intro__item" data-fade-up data-delay="0.2">Totam rem aperiam eaque ipsa</li>
+                <li class="intro__item" data-fade-up data-delay="0.3">Sit voluptatem accusantium doloremque laudantium</li>
+                <li class="intro__item" data-fade-up data-delay="0.4">Sed ut perspiciatis, unde omnis iste natus error</li>
+              </ul>
+            </div>
+
+            <div class="intro__btn-wrapper" data-fade-up data-delay="0.5">
+              <button type="button" class="btn">Заказать</button>
+              <a href="#form" class="btn btn--light">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="order" id="form">
+        <div class="container">
+          <div class="order__inner">
+
+
+            <h2 class="title title--h2" data-fade-up>Оформление<span class="text-blue"> Заказа</span></h2>
+            <p class="order__info" data-fade-up data-delay="0.1">Перед заполнением формы ознакомьтесь с&nbsp;нашей схемой работы!</p>
+
+            <div class="scheme">
+              <ol class="scheme__list">
+                <li class="scheme__item" data-fade data-delay="0.3">
+                  <div class="scheme__circle">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#search"></use>
+                    </svg>
+                  </div>
+                  <p class="scheme__text">Lorem ipsum dolor
+                    sit amet</p>
+                </li>
+
+                <li class="scheme__item"  data-fade data-delay="0.4">
+                  <div class="scheme__circle">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#percent"></use>
+                    </svg>
+                  </div>
+                  <p class="scheme__text">Сonsecteturadipiscing elit</p>
+                </li>
+
+                <li class="scheme__item"  data-fade data-delay="0.5">
+                  <div class="scheme__circle">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#file"></use>
+                    </svg>
+                  </div>
+                  <p class="scheme__text">Sed do eiusmod tempor</p>
+                </li>
+
+                <li class="scheme__item"  data-fade data-delay="0.6">
+                  <div class="scheme__circle">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#message"></use>
+                    </svg>
+                  </div>
+                  <p class="scheme__text">Esse cillum dolore
+                    eu fugiat</p>
+                </li>
+
+                <li class="scheme__item" data-fade data-delay="0.7">
+                  <div class="scheme__circle">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#money"></use>
+                    </svg>
+                  </div>
+                  <p class="scheme__text">Excepteur sint occaecat cupidatat non proident</p>
+                </li>
+              </ol>
+            </div>
+
+            <div class="form" data-fade-up data-form-validate="data-form-validate" data-callback="base">
+              <form action="#" method="POST">
+                <div class="form__grid">
+                  <div class="form__item">
+                    <div class="custom-select" data-select="data-select" data-validate-type="select"
+                      data-name="some-name" data-id="type" data-required="data-required"><span
+                        class="custom-select__error">Поле обязательно к заполнению</span><span
+                        class="custom-select__placeholder">Выберите тип системы</span>
+                      <button class="custom-select__button" type="button" aria-label="Выберите одну из опций"><span
+                          class="custom-select__text"></span><span class="custom-select__icon"></span></button>
+                      <div class="custom-select__list-wrapper">
+                        <ul class="custom-select__list" role="listbox">
+                          <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="false"
+                            role="option">Sed ut perspiciatis</li>
+                          <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false"
+                            role="option">Nemo enim ipsam</li>
+                          <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false"
+                            role="option">Et harum quidem</li>
+                          <li class="custom-select__item" tabindex="0" data-select-value="id-4" aria-selected="false"
+                            role="option">Temporibus autem</li>
+                          <li class="custom-select__item" tabindex="0" data-select-value="id-5" aria-selected="false"
+                            role="option">Itaque earum rerum</li>
+                          <li class="custom-select__item" tabindex="0" data-select-value="id-6" aria-selected="false"
+                            role="option">Sed ut perspiciatis</li>
+                          <li class="custom-select__item" tabindex="0" data-select-value="id-7" aria-selected="false"
+                            role="option">Nemo enim ipsam</li>
+                          <li class="custom-select__item" tabindex="0" data-select-value="id-8" aria-selected="false"
+                            role="option">Et harum quidem</li>
+                          <li class="custom-select__item" tabindex="0" data-select-value="id-9" aria-selected="false"
+                            role="option">Temporibus autem</li>
+                          <li class="custom-select__item" tabindex="0" data-select-value="id-10" aria-selected="false"
+                            role="option">Itaque earum rerum</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="form__item">
+                    <div class="custom-input" data-validate-type="email"
+                      data-message-base="Поле обязательно к заполнению" data-required="data-required">
+                      <label>
+                        <input name="userEmail" type="email" placeholder="Ваш e-mail">
+                        <span class="custom-input__label">Ваш e-mail</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="form__item">
+                    <div class="custom-input" data-validate-type="text" data-limitation="name"
+                      data-message-base="Поле обязательно к заполнению"
+                      data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
+                      <label>
+                        <input name="userName" type="text" placeholder="Ваше имя">
+                        <span class="custom-input__label">Ваше имя</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="form__item form__item--col-2">
+                    <div class="input-range" data-input-range="wrapper">
+                      <div class="input-range__text-wrapper">
+                        <p class="input-range__text">
+                          Sed ut perspiciatis, unde omnis iste natus
+                        </p>
+                        <div class="input-range__value-wrapper">
+                          <span class="input-range__value" data-input-range="value"></span>
+                          <span>%</span>
+                        </div>
+
+                      </div>
+                      <label>
+                        <input name="range" type="range" value="75" max="100" min="0">
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="form__item">
+                    <div class="input-upload input-upload--file" data-upload="all-file"
+                      data-validate-type="custom-upload">
+                      <label>
+                        <input type="file" name="upload-file" >
+                        <span class="input-upload__btn">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#file-2"></use>
+                          </svg>
+                          <span class="input-upload__btn-text">Прикрепить файл</span>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn form__btn-submit">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__text-wrapper">
+            <p class="footer__copyright">
+              © 2018 «LOREMIPSUM.NET» Все&nbsp;права защищены.</p>
+          </div>
+          <ul class="footer__payment">
+            <li class="footer__payment-item">
+              <svg>
+                <use xlink:href="img/sprite.svg#qiwi"></use>
+              </svg>
+              <span class="footer__payment-name">QIWI wallet</span>
+            </li>
+            <li class="footer__payment-item">
+              <svg>
+                <use xlink:href="img/sprite.svg#yandex"></use>
+              </svg>
+              <span class="footer__payment-name">Yandex Money</span>
+            </li>
+            <li class="footer__payment-item">
+              <svg>
+                <use xlink:href="img/sprite.svg#web-money"></use>
+              </svg>
+              <span class="footer__payment-name">Web-Money</span>
+            </li>
+          </ul>
+
+          <ul class="footer__contacts">
+            <li class="footer__contact-item">
+              <a href="mailto:info@ipsum228.com" target="_blank" rel="nofollow noopener noreferrer"
+                class="footer__contact-link">
+                <svg>
+                  <use xlink:href="img/sprite.svg#email"></use>
+                </svg>
+                <span class="footer__contact-text">info@ipsum228.com</span>
+              </a>
+            </li>
+            <li class="footer__contact-item">
+              <a href="#" target="_blank" rel="nofollow noopener noreferrer" class="footer__contact-link">
+                <svg>
+                  <use xlink:href="img/sprite.svg#vk"></use>
+                </svg>
+                <span class="footer__contact-text">Мы&nbsp;вконтакте</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/vendor.min.js" defer></script>
+  <script src="js/main.min.js" defer></script>
+</body>
+
+</html>
